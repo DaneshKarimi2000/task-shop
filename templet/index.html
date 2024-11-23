@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../scripte/scripte.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="pageN">
+            <div class="titleN">
+                <h1>Sedap.</h1>
+                <p>Madern Admin Dashbord</p>
+            </div>
+            <div class="itemN">
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img src="../img-icon/homepages_icon.png"
+                        alt="">
+                    <p>Dashbord</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img
+                        src="../img-icon/file_new_sheet_icon.png" alt="">
+                    <p>Order List</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img
+                        src="../img-icon/account_customer.png" alt="">
+                    <p>Customer</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img
+                        src="../img-icon/chart_graph_icon.png" alt="">
+                    <p>Analytics</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img src="../img-icon/edit_pencilicon.png"
+                        alt="">
+                    <p>Reveiws</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img src="../img-icon/food_icon.png"
+                        alt="">
+                    <p>Foods</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img src="../img-icon/food_icon.png"
+                        alt="">
+                    <p>Foods Detali</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img
+                        src="../img-icon/account_customer.png" alt="">
+                    <p>Customer Detali</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img src="../img-icon/calendar_icon.png"
+                        alt="">
+                    <p>Calendar</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img
+                        src="../img-icon/message_chat_icon.png" alt="">
+                    <p>Chat</p>
+                </a>
+                <a class="itemN-btn" href="" onclick="changeBackground(this)"><img
+                        src="../img-icon/4781810_coin_currency_dollar_finance_money_icon (1).png" alt="">
+                    <p>Wallt</p>
+                </a>
+            </div>
+            <div class="green-addH">
+                <div class="parg">
+                    <p>pleas anganize yor vena fallow go to rome admin ballow!</p>
+                    <button class="btn-add" type="button">+Add Menus</button>
+                </div>
+                <div class="div-imgH">
+                    <img style="height: 90%; width: 100%;" src="../img-icon/10772850_cook_hat_toque_chef_food_icon.png"
+                        alt="">
+                </div>
+            </div>
+            <div>
+                <p style="margin-top: 20px; font-size: 12px;">Sedap Restarant Admin Dashboard</p>
+                <p style=" font-size: 9px; color: rgb(167, 167, 167);">@ 2020 All mighta Mesetped</p>
+
+                <p style="font-size: 11px; margin-top: 40px;">Made mith ❤️by l'sterdrnm</p>
+            </div>
+        </div>
+        <div class="pageH">
+            <!-- 1 -->
+            <div class="header-head">
+                <div class="searche">
+                    <input type="text" class="in-serche" placeholder="Search here">
+                    <a href="#" class="img-search"><img src="../img-icon/search.png" alt=""></a>
+                </div>
+                <div class="item-head">
+                    <div class="item-ring">
+                        <a href="#">
+                            <svg height="26" viewBox="0 0 32 32" width="27" style="fill: blueviolet;"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title />
+                                <g data-name="2" id="_2">
+                                    <path
+                                        d="M28,24a2,2,0,0,1-2-2V13a10,10,0,0,0-9-9.95V1H15V3.05A10,10,0,0,0,6,13v9a2,2,0,0,1-2,2H3.5v2h9.68a3,3,0,1,0,5.64,0H28.5V24ZM8,22V13a8,8,0,0,1,16,0v9a3.91,3.91,0,0,0,.56,2H7.44A3.91,3.91,0,0,0,8,22Zm9,5a1,1,0,1,1-1-1A1,1,0,0,1,17,27Z"
+                                        id="bell_ring_notification_alarm" />
+                                </g>
+                            </svg>
+                        </a>
+                        <p class="noti-rin">21</p>
+                    </div>
+
+                    <div class="item-chat">
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: blueviolet;">
+                                <g>
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zm-.692-2H20V5H4v13.385L5.763 17zM11 10h2v2h-2v-2zm-4 0h2v2H7v-2zm8 0h2v2h-2v-2z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <p class="noti-chat">53</p>
+                    </div>
+                    <div class="item-box">
+                        <a href="#">
+                            <svg style="fill: blueviolet;" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title />
+                                <path
+                                    d="M12,29H52a0,0,0,0,1,0,0V50.148A3.852,3.852,0,0,1,48.148,54h-32.3A3.852,3.852,0,0,1,12,50.148V29A0,0,0,0,1,12,29Z"
+                                    style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" />
+                                <rect height="7" rx="1.238"
+                                    style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"
+                                    width="44" x="10" y="22" />
+                                <path
+                                    d="M31.866,21.656l-4.319-8.973a4.878,4.878,0,0,0-8.258-.862L19.153,12a4.878,4.878,0,0,0,2.936,7.766Z"
+                                    style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" />
+                                <path
+                                    d="M32.134,21.656l4.319-8.973a4.878,4.878,0,0,1,8.258-.862l.136.177a4.878,4.878,0,0,1-2.936,7.766Z"
+                                    style="fill:none;stroke:green;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" />
+                                <line
+                                    style="fill:none;stroke:green;stroke-linecap:square;stroke-linejoin:round;stroke-width:2px"
+                                    x1="25" x2="25.047" y1="22" y2="54" />
+                                <line
+                                    style="fill:none;stroke:green;stroke-linecap:square;stroke-linejoin:round;stroke-width:2px"
+                                    x1="39" x2="39" y1="22" y2="54" />
+                            </svg>
+                        </a>
+                        <p class="noti-box">53</p>
+                    </div>
+                    <div class="item-setting">
+                        <a href="#">
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="fill: orange;">
+                                <title />
+                                <g data-name="1" id="_1">
+                                    <path
+                                        d="M293.9,450H233.53a15,15,0,0,1-14.92-13.42l-4.47-42.09a152.77,152.77,0,0,1-18.25-7.56L163,413.53a15,15,0,0,1-20-1.06l-42.69-42.69a15,15,0,0,1-1.06-20l26.61-32.93a152.15,152.15,0,0,1-7.57-18.25L76.13,294.1a15,15,0,0,1-13.42-14.91V218.81A15,15,0,0,1,76.13,203.9l42.09-4.47a152.15,152.15,0,0,1,7.57-18.25L99.18,148.25a15,15,0,0,1,1.06-20l42.69-42.69a15,15,0,0,1,20-1.06l32.93,26.6a152.77,152.77,0,0,1,18.25-7.56l4.47-42.09A15,15,0,0,1,233.53,48H293.9a15,15,0,0,1,14.92,13.42l4.46,42.09a152.91,152.91,0,0,1,18.26,7.56l32.92-26.6a15,15,0,0,1,20,1.06l42.69,42.69a15,15,0,0,1,1.06,20l-26.61,32.93a153.8,153.8,0,0,1,7.57,18.25l42.09,4.47a15,15,0,0,1,13.41,14.91v60.38A15,15,0,0,1,451.3,294.1l-42.09,4.47a153.8,153.8,0,0,1-7.57,18.25l26.61,32.93a15,15,0,0,1-1.06,20L384.5,412.47a15,15,0,0,1-20,1.06l-32.92-26.6a152.91,152.91,0,0,1-18.26,7.56l-4.46,42.09A15,15,0,0,1,293.9,450ZM247,420h33.39l4.09-38.56a15,15,0,0,1,11.06-12.91A123,123,0,0,0,325.7,356a15,15,0,0,1,17,1.31l30.16,24.37,23.61-23.61L372.06,328a15,15,0,0,1-1.31-17,122.63,122.63,0,0,0,12.49-30.14,15,15,0,0,1,12.92-11.06l38.55-4.1V232.31l-38.55-4.1a15,15,0,0,1-12.92-11.06A122.63,122.63,0,0,0,370.75,187a15,15,0,0,1,1.31-17l24.37-30.16-23.61-23.61-30.16,24.37a15,15,0,0,1-17,1.31,123,123,0,0,0-30.14-12.49,15,15,0,0,1-11.06-12.91L280.41,78H247l-4.09,38.56a15,15,0,0,1-11.07,12.91A122.79,122.79,0,0,0,201.73,142a15,15,0,0,1-17-1.31L154.6,116.28,131,139.89l24.38,30.16a15,15,0,0,1,1.3,17,123.41,123.41,0,0,0-12.49,30.14,15,15,0,0,1-12.91,11.06l-38.56,4.1v33.38l38.56,4.1a15,15,0,0,1,12.91,11.06A123.41,123.41,0,0,0,156.67,311a15,15,0,0,1-1.3,17L131,358.11l23.61,23.61,30.17-24.37a15,15,0,0,1,17-1.31,122.79,122.79,0,0,0,30.13,12.49,15,15,0,0,1,11.07,12.91ZM449.71,279.19h0Z" />
+                                    <path
+                                        d="M263.71,340.36A91.36,91.36,0,1,1,355.08,249,91.46,91.46,0,0,1,263.71,340.36Zm0-152.72A61.36,61.36,0,1,0,325.08,249,61.43,61.43,0,0,0,263.71,187.64Z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <p class="noti-setting">10</p>
+                    </div>
+                </div>
+                <div class="line-head">
+                </div>
+                <div class="user-head">
+                    <p class="user-hi">hello,<b>Danesh</b></p>
+                    <img src="../img-icon/userPig.jpg" alt="" class="user-img">
+                </div>
+
+            </div>
+            <!-- 2 -->
+            <div class="title-pgn">
+                <div class="item1">
+                    <h2>
+                        Dashboard
+                    </h2>
+                    <p>
+                        Hi,Samanthe.Welcome back to Sedap Admin!
+                    </p>
+                </div>
+                <div class="item2">
+                    <div class="item-b1">
+                        <div class="item-v1">
+                            <a href="#">
+                                <svg class="svg-cl" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V192H48V448z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="item-b2">
+                        <h4>Filter Periode</h4>
+                        <p>17 Aprli 2020-21May2020</p>
+                    </div>
+                    <svg class="svg-a" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #3360f3;
+                                    stroke-linejoin: round;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g data-name="442-Arrow down" id="_442-Arrow_down">
+                            <polyline class="cls-1" points="31 8 16 22 1 8" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="num-item">
+                <div class="item-c">
+                    <img src="../img-icon/list_pencil_icon.png" alt="">
+                    <div class="item-text">
+                        <h1>
+                            75
+                        </h1>
+                        <h5>Total Orders</h5>
+                        <p><span
+                                style="display: flex; justify-content: center;width: 10px; height: 10px; background-color: rgb(151, 151, 151); border-radius: 30px;"></span>&nbsp;
+                            4% (2)days</p>
+
+
+                    </div>
+                </div>
+                <div class="item-c">
+                    <img src="../img-icon/package_box_icon.png" alt="">
+                    <div class="item-text">
+                        <h1>
+                            357
+                        </h1>
+                        <h5>Total Delivered</h5>
+                        <p><span
+                                style="display: flex; justify-content: center;width: 10px; height: 10px; background-color: rgb(151, 151, 151); border-radius: 30px;"></span>&nbsp;
+                            6% (30)days</p>
+
+
+                    </div>
+                </div>
+                <div class="item-c">
+                    <img src="../img-icon/list_pencil_icon.png" alt="">
+                    <div class="item-text">
+                        <h1>
+                            65
+                        </h1>
+                        <h5>Total Canceled</h5>
+                        <p><span
+                                style="display: flex; justify-content: center;width: 10px; height: 10px; background-color: rgb(151, 151, 151); border-radius: 30px;"></span>&nbsp;
+                            29% (2)days</p>
+
+
+                    </div>
+                </div>
+                <div class="item-c">
+                    <img src="../img-icon/list_pencil_icon.png" alt="">
+                    <div class="item-text">
+                        <h1>
+                            $128
+                        </h1>
+                        <h5>Total Revetue</h5>
+                        <p><span
+                                style="display: flex; justify-content: center;width: 10px; height: 10px; background-color: rgb(151, 151, 151); border-radius: 30px;"></span>&nbsp;
+                            4% (2)days</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="chart-1">
+                    <div class="chart-title">
+                        <h2>Pie Chart</h2>
+                        <div class="ch-title">
+                            <input type="checkbox" name="Chart" id="chart-box">
+                            <label for="Chart">Chart</label>
+                            <input type="checkbox" name="Show" id="show-box">
+                            <label for="Show">Show Value</label>
+                            <div class="opit-chart">
+                                <a href="#" class="dote-menu" style="text-decoration: none; color:black; ">
+                                    <span class="circl"></span>
+                                    <span class="circl"></span>
+                                    <span class="circl"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="chart-grphic">
+                        <div class="bg-deg" style="width: 25%; ">
+                            <canvas id="dougChart"></canvas>
+                            <h3 class="ch1-tit">81%</h3>
+                        </div>
+                        <div class="bg-deg1" style="width: 25%; ">
+                            <canvas id="dougChart1"></canvas>
+                            <h3 class="ch2-tit">22%</h3>
+                        </div>
+                        <div class="bg-deg2" style="width: 25%; ">
+                            <canvas id="dougChart2"></canvas>
+                            <h3 class="ch3-tit">62%</h3>
+                        </div>
+
+                    </div>
+                    <div class="ch-foot">
+                        <h4 class="ch-labl1">Total Order</h4>
+                        <h4 class="ch-labl2">Customer Growth</h4>
+                        <h4 class="ch-labl3">Total Revenue</h4>
+                    </div>
+
+                </div>
+                <div class="chart-2">
+                    <div class="title-ch2">
+                        <div class="item-cht1">
+                            <h2>Chart Order</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adip</p>
+                        </div>
+                        <div class="item-cht2">
+                            <svg aria-labelledby="downloadIconTitle" color="#2329D6" fill="none" height="24px"
+                                role="img" stroke="#2329D6" stroke-linecap="square" stroke-linejoin="miter"
+                                stroke-width="1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
+                                <title id="downloadIconTitle" />
+                                <path d="M12,3 L12,16" />
+                                <polyline points="7 12 12 17 17 12" />
+                                <path d="M20,21 L4,21" />
+                            </svg>
+                            <a href=""> Save Report</a>
+                        </div>
+                    </div>
+                    <div class="bg-ch2" style="width: 80%; margin-right: auto; margin-left: auto;">
+                        <canvas id="lineChart"></canvas>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="chart-down">
+                <div class="chartd1">
+                    <div class="chd-h">
+                        <h2>Totale Revenue</h2>
+                        <div>
+                            <span class="it-1"></span>
+                            <span class="it-2">2020</span>
+                            <span class="it-3"></span>
+                            <span class="it-4">2021</span>
+                        </div>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: center; margin-top: 1%;">
+                        <div style="width: 80%;">
+                            <canvas id="sss"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chartd2">
+                    <div class="chd2-h">
+                        <h2>Customer Map</h2>
+                        <div>
+                            <select name="" id="">
+                                <option value="Weekly">Weekly</option>
+                                <option value="asaasd">tusd</option>
+                                <option value="sas">sassa</option>
+                            </select>
+                            <a href="#" class="dote-menu" style="text-decoration: none; color:black; ">
+                                <span class="circl"></span>
+                                <span class="circl"></span>
+                                <span class="circl"></span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div id="bg-chc">
+                        <div style="width: 90%;">
+                            <canvas id="BarChart2" height="220px"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footr" style="display: flex; justify-content: space-between; align-items: center; width: 80vw;
+            padding:3% 0;">
+                <div class="f-item1" style="display: flex; flex-flow: column;">
+                    <h2>Customer Review</h2>
+                    <p style="font-size: 15px; color: rgb(133, 133, 133);">Eum fuga consquuntur utadsjn et.</p>
+                </div>
+                <div class="f-item2">
+                    <div href="#" class="back">
+                        < </div>
+                            <div href="#" class="next"> > </div>
+                    </div>
+                </div>
+                <div class="footr-list">
+                    <div class="it-f1">
+                        <div class="it-f1-t1">
+                            <img class="img-user" src="../img-user/user1.jpg" alt="">
+                            <span class="aa">
+                                <h4>Jons Sene</h4>
+                                <p>2 days age</p>
+                            </span>
+                        </div>
+                        <div class="it-f1-t2">
+                            <div class="kk">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus dignissimos adipisci reprehenderit unde vel
+                                repellendus perspis expedita?
+                            </div>
+                        </div>
+                        <img class="img-fo" src="../img-food/food1.png" alt="">
+                        <div class="it-f1-t3">
+                            <div class="stars-sorce">
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+                                
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <title />
+                                    <g data-name="1" id="_1">
+                                        <path
+                                            d="M370.24,425.59a14.89,14.89,0,0,1-7-1.72L257,368,150.74,423.87A15,15,0,0,1,129,408.06l20.3-118.32-86-83.8a15,15,0,0,1,8.31-25.59l118.81-17.26L243.55,55.43a15,15,0,0,1,26.9,0l53.13,107.66,118.8,17.26a15,15,0,0,1,8.32,25.59l-86,83.8L385,408.06a15,15,0,0,1-14.78,17.53ZM106,205.67l69.85,68.09A15,15,0,0,1,180.17,287l-16.49,96.14L250,337.78a15,15,0,0,1,14,0l86.34,45.39L333.83,287a15,15,0,0,1,4.31-13.27L408,205.67l-96.53-14a15,15,0,0,1-11.29-8.2L257,96l-43.17,87.47a15,15,0,0,1-11.3,8.2Z" />
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <title />
+                                    <g data-name="1" id="_1">
+                                        <path
+                                            d="M370.24,425.59a14.89,14.89,0,0,1-7-1.72L257,368,150.74,423.87A15,15,0,0,1,129,408.06l20.3-118.32-86-83.8a15,15,0,0,1,8.31-25.59l118.81-17.26L243.55,55.43a15,15,0,0,1,26.9,0l53.13,107.66,118.8,17.26a15,15,0,0,1,8.32,25.59l-86,83.8L385,408.06a15,15,0,0,1-14.78,17.53ZM106,205.67l69.85,68.09A15,15,0,0,1,180.17,287l-16.49,96.14L250,337.78a15,15,0,0,1,14,0l86.34,45.39L333.83,287a15,15,0,0,1,4.31-13.27L408,205.67l-96.53-14a15,15,0,0,1-11.29-8.2L257,96l-43.17,87.47a15,15,0,0,1-11.3,8.2Z" />
+                                    </g>
+                                </svg>
+
+
+                            </div>
+                            <p>3.0</p>
+                        </div>
+                    </div>
+                    <div class="it-f2">
+                        <div class="it-f1-t1">
+                            <img class="img-user" src="../img-user/user2.jpg" alt="">
+                            <span class="aa">
+                                <h4>Sofia</h4>
+                                <p>2 days age</p>
+                            </span>
+                        </div>
+                        <div class="it-f1-t2">
+                            <div class="kk">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus dignissimos adipisci reprehenderit unde vel
+                                repellendus perspis expedita?
+                            </div>
+                        </div>
+                        <img class="img-fo" src="../img-food/food1.png" alt="">
+                        <div class="it-f1-t3">
+                            <div class="stars-sorce">
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+                                <svg height="16" version="1.1" width="16" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <title />
+                                    <g data-name="1" id="_1">
+                                        <path
+                                            d="M370.24,425.59a14.89,14.89,0,0,1-7-1.72L257,368,150.74,423.87A15,15,0,0,1,129,408.06l20.3-118.32-86-83.8a15,15,0,0,1,8.31-25.59l118.81-17.26L243.55,55.43a15,15,0,0,1,26.9,0l53.13,107.66,118.8,17.26a15,15,0,0,1,8.32,25.59l-86,83.8L385,408.06a15,15,0,0,1-14.78,17.53ZM106,205.67l69.85,68.09A15,15,0,0,1,180.17,287l-16.49,96.14L250,337.78a15,15,0,0,1,14,0l86.34,45.39L333.83,287a15,15,0,0,1,4.31-13.27L408,205.67l-96.53-14a15,15,0,0,1-11.29-8.2L257,96l-43.17,87.47a15,15,0,0,1-11.3,8.2Z" />
+                                    </g>
+                                </svg>
+
+
+                            </div>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                    <div class="it-f3">
+                        <div class="it-f1-t1">
+                            <img class="img-user" src="../img-user/user3.jpg" alt="">
+                            <span class="aa">
+                                <h4>Andy</h4>
+                                <p>2 days age</p>
+                            </span>
+                        </div>
+                        <div class="it-f1-t2">
+                            <div class="kk">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus dignissimos adipisci reprehenderit unde vel
+                                repellendus perspis expedita?
+                            </div>
+                        </div>
+                        <img class="img-fo" src="../img-food/food1.png" alt="">
+                        <div class="it-f1-t3">
+                            <div class="stars-sorce">
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+
+                                <svg height="17" version="1.1" width="17" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+                                <svg height="16" version="1.1" width="16" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <g transform="translate(0 -1028.4)">
+                                        <path
+                                            d="m9.5999 1.4564 1.5501 4.7699 5.015 0.0002-4.057 2.9482 1.55 4.7703-4.0581-2.948-4.0577 2.948 1.5497-4.7703-4.0575-2.9482 5.0154-0.0002z"
+                                            fill="#f1c40f" stroke="#f39c12" stroke-width=".69755"
+                                            transform="matrix(1.4336 0 0 1.4336 -1.7602 1028.9)" />
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <title />
+                                    <g data-name="1" id="_1">
+                                        <path
+                                            d="M370.24,425.59a14.89,14.89,0,0,1-7-1.72L257,368,150.74,423.87A15,15,0,0,1,129,408.06l20.3-118.32-86-83.8a15,15,0,0,1,8.31-25.59l118.81-17.26L243.55,55.43a15,15,0,0,1,26.9,0l53.13,107.66,118.8,17.26a15,15,0,0,1,8.32,25.59l-86,83.8L385,408.06a15,15,0,0,1-14.78,17.53ZM106,205.67l69.85,68.09A15,15,0,0,1,180.17,287l-16.49,96.14L250,337.78a15,15,0,0,1,14,0l86.34,45.39L333.83,287a15,15,0,0,1,4.31-13.27L408,205.67l-96.53-14a15,15,0,0,1-11.29-8.2L257,96l-43.17,87.47a15,15,0,0,1-11.3,8.2Z" />
+                                    </g>
+                                </svg>
+
+
+                            </div>
+                            <p>4.1</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            // نمودار دایره
+            const ctxde = document.getElementById('dougChart').getContext('2d');
+            const dougChart = new Chart(ctxde, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Sun',], // روزهای هفته
+                    datasets: [{
+
+                        data: [81, 19], // داده‌ها برای هر روز
+                        backgroundColor: [
+                            'rgba(255, 0, 0,0.7)', // رنگ نوار اول
+                            'rgba(255, 255, 255, 0.7)', // رنگ نوار اول
+
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 99, 132, 1)',
+
+                        ],
+                        borderWidth: 1,
+                        maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false // عدم نمایش عنوان نمودار در بالا
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false, // پنهان کردن اعداد محور y
+                            }, border: {
+                                display: false, // مخفی کردن خط محور y
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false, // پنهان کردن اعداد محور y
+                            },
+                            border: {
+                                display: false, // مخفی کردن خط محور y
+                            }
+                        },
+
+
+                    }
+                }
+            });
+            const ctxde1 = document.getElementById('dougChart1').getContext('2d');
+            const dougChart1 = new Chart(ctxde1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Sun',], // روزهای هفته
+                    datasets: [{
+
+                        data: [22, 78], // داده‌ها برای هر روز
+                        backgroundColor: [
+                            'rgba(14, 165, 0, 0.7)', // رنگ نوار اول
+                            'rgba(255, 255, 255, 0.7)', // رنگ نوار اول
+
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 99, 132, 1)',
+
+                        ],
+                        borderWidth: 1,
+                        maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false // عدم نمایش عنوان نمودار در بالا
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false, // پنهان کردن اعداد محور y
+                            }, border: {
+                                display: false, // مخفی کردن خط محور y
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false, // پنهان کردن اعداد محور y
+                            },
+                            border: {
+                                display: false, // مخفی کردن خط محور y
+                            }
+                        },
+
+
+                    }
+                }
+            });
+            const ctxd = document.getElementById('dougChart2').getContext('2d');
+            const dougChart2 = new Chart(ctxd, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Sun',],
+                    datasets: [{
+
+                        data: [60, 30],
+                        backgroundColor: [
+                            'rgba(0, 79, 251,0.7)',
+                            'rgba(255, 255, 255, 0.7)',
+
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 99, 132, 1)',
+
+                        ],
+                        borderWidth: 1,
+                        maxBarThickness: 10
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false,
+                            }, border: {
+                                display: false,
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false,
+                            },
+                            border: {
+                                display: false,
+                            }
+                        },
+
+
+                    }
+                }
+            });
+            //نمودار خطی
+            const ctxl = document.getElementById('lineChart').getContext('2d');
+            const lineChart = new Chart(ctxl, {
+                type: 'line',
+                data: {
+                    labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], // برچسب‌ها
+                    datasets: [{
+                        data: [0, 250, 190, 456, 180, 210, 70], // مقادیر نمودار
+                        borderColor: 'blue', // رنگ خط
+                        backgroundColor: 'rgba(173, 216, 230, 0.2)', // رنگ زیر نمودار
+                        fill: true,
+                        tension: 0.4, // منحنی نمودار
+                        pointRadius: 0,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false // عدم نمایش عنوان نمودار در بالا
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+
+                            },
+                            grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: false,
+                            },
+                            ticks: {
+                                display: false, // پنهان کردن اعداد محور y
+                            },
+                            border: {
+                                display: false, // مخفی کردن خط محور y
+                            },
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+            // نمودار خطی دوم
+            const ctxk = document.getElementById('sss').getContext('2d');
+            new Chart(ctxk, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [
+                        {
+
+                            data: [10000, 15000, 20000, 15000, 30000, 38000, 30000, 15000, 25000, 15000, 20000, 15000],
+                            borderColor: 'blue',
+                            backgroundColor: 'rgba(0, 0, 255, 0.1)',
+                            fill: true,
+                            pointRadius: 0,
+                            tension: 0.4, // Makes the line smooth
+                        },
+                        {
+
+                            data: [20000, 25000, 15000, 10000, 15000, 30000, 35000, 30000, 25000, 15000, 30000, 35000],
+                            borderColor: 'red',
+                            backgroundColor: 'rgba(255, 0, 0, 0.1)',
+                            fill: true,
+                            pointRadius: 0,
+                            tension: 0.4, // Makes the line smooth
+                        },
+                    ],
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: {
+                            enabled: false,
+                        },
+                        legend: {
+                            display: false,
+                        },
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+
+                            },
+                        },
+                        y: {
+                            title: {
+                                display: true,
+
+                            },
+                            border: {
+                                display: false, // مخفی کردن خط محور y
+                            },
+                            grid: {
+                                display: false
+                            },
+
+                            beginAtZero: true,
+                        },
+                    },
+                },
+            });
+            // نمودار ستونی
+            const ctxbar = document.getElementById('BarChart2').getContext('2d');
+            const BarChart = new Chart(ctxbar, {
+                type: 'bar', //نوع نمودار
+                data: {
+                    labels: ['Sun', 'Sun', 'Sun', 'Sun', 'Sun', 'Sun', 'Sun'], // روزهای هفته// تعداد لیبل ها 
+                    datasets: [{
+
+                        data: [30, 80, 50, 60, 20, 70, 60], // داده‌ها برای هر نوار
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.7)', // رنگ نوار اول
+                            'rgba(255, 205, 86, 0.7)', // رنگ نوار دوم
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(255, 205, 86, 0.7)',
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(255, 205, 86, 0.7)',
+                            'rgba(255, 99, 132, 0.7)'
+                        ],// رنگ نواره ها
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 205, 86, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 205, 86, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(255, 205, 86, 1)',
+                            'rgba(255, 99, 132, 1)'
+                        ],//رنگ بوردر نواره
+                        borderWidth: 1,//بوردر نوار سایز
+                        maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false // عدم نمایش عنوان نمودار در بالا
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            max: 90 // تنظیم حداکثر محور y
+
+                        },
+                    }
+                }
+            });
+
+        </script>
+
+</body>
+
+</html>

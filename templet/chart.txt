@@ -1,0 +1,113 @@
+//doughnut
+<div class="bg-deg" style="width: 35%; ">
+            <canvas id="dougChart"></canvas>
+</div>
+<script>
+const ctxde = document.getElementById('dougChart').getContext('2d');
+        const dougChart = new Chart(ctxde, {
+            type: 'doughnut',
+            data: {
+                labels: ['Sun',], // روزهای هفته
+                datasets: [{
+
+                    data: [30, 60], // داده‌ها برای هر روز
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)', // رنگ نوار اول
+                        'rgba(255, 255, 255, 0.7)', // رنگ نوار اول
+
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+
+                    ],
+                    borderWidth: 1,
+                    maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false // عدم نمایش عنوان نمودار در بالا
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            display: false, // پنهان کردن اعداد محور y
+                        }, border: {
+                            display: false, // مخفی کردن خط محور y
+                        }
+                    },
+                    y: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            display: false, // پنهان کردن اعداد محور y
+                        },
+                        border: {
+                            display: false, // مخفی کردن خط محور y
+                        }
+                    },
+
+
+                }
+            }
+        });
+</script>
+//------ bar chart
+<script>
+ const ctxbar = document.getElementById('BarChart').getContext('2d');
+        const BarChart = new Chart(ctxbar, {
+            type: 'bar', //نوع نمودار
+            data: {
+                labels: [ 'Sun', 'Sun', 'Sun', 'Sun', 'Sun', 'Sun', 'Sun'], // روزهای هفته// تعداد لیبل ها 
+                datasets: [{
+
+                    data: [30, 80, 50, 60, 20, 70, 60], // داده‌ها برای هر نوار
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)', // رنگ نوار اول
+                        'rgba(255, 205, 86, 0.7)', // رنگ نوار دوم
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(255, 205, 86, 0.7)',
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(255, 205, 86, 0.7)',
+                        'rgba(255, 99, 132, 0.7)'
+                    ],// رنگ نواره ها
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 205, 86, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 205, 86, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 205, 86, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],//رنگ بوردر نواره
+                    borderWidth: 1,//بوردر نوار سایز
+                    maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false // عدم نمایش عنوان نمودار در بالا
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true,
+                        max: 90 // تنظیم حداکثر محور y
+                    }
+                }
+            }
+        });
+</script>
