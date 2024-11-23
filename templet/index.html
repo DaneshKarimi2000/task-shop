@@ -630,13 +630,13 @@
             const dougChart = new Chart(ctxde, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Sun',], // روزهای هفته
+                    labels: ['Sun',],
                     datasets: [{
 
-                        data: [81, 19], // داده‌ها برای هر روز
+                        data: [81, 19], 
                         backgroundColor: [
-                            'rgba(255, 0, 0,0.7)', // رنگ نوار اول
-                            'rgba(255, 255, 255, 0.7)', // رنگ نوار اول
+                            'rgba(255, 0, 0,0.7)', 
+                            'rgba(255, 255, 255, 0.7)', 
 
                         ],
                         borderColor: [
@@ -645,14 +645,14 @@
 
                         ],
                         borderWidth: 1,
-                        maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                        maxBarThickness: 10 
                     }]
                 },
                 options: {
                     responsive: true,
                     plugins: {
                         legend: {
-                            display: false // عدم نمایش عنوان نمودار در بالا
+                            display: false 
                         }
                     },
                     scales: {
@@ -661,9 +661,9 @@
                                 display: false
                             },
                             ticks: {
-                                display: false, // پنهان کردن اعداد محور y
+                                display: false, 
                             }, border: {
-                                display: false, // مخفی کردن خط محور y
+                                display: false, 
                             }
                         },
                         y: {
@@ -671,10 +671,10 @@
                                 display: false
                             },
                             ticks: {
-                                display: false, // پنهان کردن اعداد محور y
+                                display: false, 
                             },
                             border: {
-                                display: false, // مخفی کردن خط محور y
+                                display: false, 
                             }
                         },
 
@@ -686,13 +686,13 @@
             const dougChart1 = new Chart(ctxde1, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Sun',], // روزهای هفته
+                    labels: ['Sun',], 
                     datasets: [{
 
-                        data: [22, 78], // داده‌ها برای هر روز
+                        data: [22, 78], 
                         backgroundColor: [
-                            'rgba(14, 165, 0, 0.7)', // رنگ نوار اول
-                            'rgba(255, 255, 255, 0.7)', // رنگ نوار اول
+                            'rgba(14, 165, 0, 0.7)', 
+                            'rgba(255, 255, 255, 0.7)', 
 
                         ],
                         borderColor: [
@@ -701,14 +701,14 @@
 
                         ],
                         borderWidth: 1,
-                        maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                        maxBarThickness: 10 
                     }]
                 },
                 options: {
                     responsive: true,
                     plugins: {
                         legend: {
-                            display: false // عدم نمایش عنوان نمودار در بالا
+                            display: false 
                         }
                     },
                     scales: {
@@ -717,9 +717,9 @@
                                 display: false
                             },
                             ticks: {
-                                display: false, // پنهان کردن اعداد محور y
+                                display: false, 
                             }, border: {
-                                display: false, // مخفی کردن خط محور y
+                                display: false, 
                             }
                         },
                         y: {
@@ -727,10 +727,10 @@
                                 display: false
                             },
                             ticks: {
-                                display: false, // پنهان کردن اعداد محور y
+                                display: false, 
                             },
                             border: {
-                                display: false, // مخفی کردن خط محور y
+                                display: false, 
                             }
                         },
 
@@ -801,11 +801,11 @@
                 data: {
                     labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], // برچسب‌ها
                     datasets: [{
-                        data: [0, 250, 190, 456, 180, 210, 70], // مقادیر نمودار
-                        borderColor: 'blue', // رنگ خط
-                        backgroundColor: 'rgba(173, 216, 230, 0.2)', // رنگ زیر نمودار
+                        data: [0, 250, 190, 456, 180, 210, 70],
+                        borderColor: 'blue', 
+                        backgroundColor: 'rgba(173, 216, 230, 0.2)', 
                         fill: true,
-                        tension: 0.4, // منحنی نمودار
+                        tension: 0.4, 
                         pointRadius: 0,
                     }]
                 },
@@ -813,7 +813,7 @@
                     responsive: true,
                     plugins: {
                         legend: {
-                            display: false // عدم نمایش عنوان نمودار در بالا
+                            display: false 
                         }
                     },
                     scales: {
@@ -832,10 +832,10 @@
                                 display: false,
                             },
                             ticks: {
-                                display: false, // پنهان کردن اعداد محور y
+                                display: false, 
                             },
                             border: {
-                                display: false, // مخفی کردن خط محور y
+                                display: false, 
                             },
                             grid: {
                                 display: false
@@ -858,7 +858,7 @@
                             backgroundColor: 'rgba(0, 0, 255, 0.1)',
                             fill: true,
                             pointRadius: 0,
-                            tension: 0.4, // Makes the line smooth
+                            tension: 0.4, 
                         },
                         {
 
@@ -867,7 +867,7 @@
                             backgroundColor: 'rgba(255, 0, 0, 0.1)',
                             fill: true,
                             pointRadius: 0,
-                            tension: 0.4, // Makes the line smooth
+                            tension: 0.4, 
                         },
                     ],
                 },
@@ -894,7 +894,7 @@
 
                             },
                             border: {
-                                display: false, // مخفی کردن خط محور y
+                                display: false, 
                             },
                             grid: {
                                 display: false
@@ -931,16 +931,16 @@
                             'rgba(255, 99, 132, 1)',
                             'rgba(255, 205, 86, 1)',
                             'rgba(255, 99, 132, 1)'
-                        ],//رنگ بوردر نواره
-                        borderWidth: 1,//بوردر نوار سایز
-                        maxBarThickness: 10 // محدود کردن حداکثر عرض هر نوار به 10 پیکسل
+                        ],
+                        borderWidth: 1,
+                        maxBarThickness: 10 
                     }]
                 },
                 options: {
                     responsive: true,
                     plugins: {
                         legend: {
-                            display: false // عدم نمایش عنوان نمودار در بالا
+                            display: false 
                         }
                     },
                     scales: {
@@ -952,7 +952,7 @@
                         },
                         y: {
                             beginAtZero: true,
-                            max: 90 // تنظیم حداکثر محور y
+                            max: 90 
 
                         },
                     }
